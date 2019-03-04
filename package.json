@@ -18,7 +18,8 @@
     "test:coverage": "nyc npm run test:unit",
     "lint:src": "tslint --format stylish -p tsconfig.json",
     "lint:unit": "tslint -c tslint-test.json --format stylish test/unit/*.ts test/unit/**/*.ts",
-    "lint:integration": "tslint -c tslint-test.json --format stylish test/integration/*.ts"
+    "lint:integration": "tslint -c tslint-test.json --format stylish test/integration/*.ts",
+    "prepare": "npm run build"
   },
   "nyc": {
     "extension": [
@@ -59,7 +60,7 @@
     "node-forge": "0.7.4"
   },
   "optionalDependencies": {
-    "@google-cloud/firestore": "^1.0.1",
+    "@google-cloud/firestore": "git+https://github.com/googleapis/nodejs-firestore.git#mrschmidt-grpcjs",
     "@google-cloud/storage": "^2.3.0"
   },
   "devDependencies": {
