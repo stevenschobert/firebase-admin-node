@@ -61,7 +61,7 @@
     "node-forge": "0.7.4"
   },
   "optionalDependencies": {
-    "@google-cloud/firestore": "^2.0.0",
+    "@google-cloud/firestore": "git+https://github.com/stevenschobert/nodejs-firestore.git",
     "@google-cloud/storage": "^3.0.2"
   },
   "devDependencies": {
